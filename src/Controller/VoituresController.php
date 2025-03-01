@@ -93,9 +93,4 @@ final class VoituresController extends AbstractController
 
         return $this->redirectToRoute('app_home');
     }
-
-
-
-
-
 }
