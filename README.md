@@ -27,15 +27,16 @@ DATABASE_URL="mysql://app:!ChangeMe!@127.0.0.1:3306/app?serverVersion=10.11.2-Ma
 ```bash
 php bin/console doctrine:database:create
 ```
-➤ Créer une migration :
-```bash
-php bin/console doctrine:migrations:diff
-```
 ➤ Appliquer la migration à la base de données :
 ```bash
 php bin/console doctrine:migrations:migrate
 ```
 **Confirmez en tapant yes si demandé.**
+
+➤ Créer une migration (**si celle présente ne fonctionne pas**) :
+```bash
+php bin/console doctrine:migrations:diff
+```
 
 ## ✅ 5. Vérifier la synchronisation du schéma
 Assurez-vous que la base de données est bien en phase avec les entités :
